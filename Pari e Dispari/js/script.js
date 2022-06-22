@@ -24,3 +24,19 @@ function getRandomInt(min, max) {
 const userCPU = getRandomInt(1, 6);
 console.log("Numero casuale della CPU: " + userCPU);
 
+// Faccio la somma dei due valori numerici di user e CPU
+let sum = userCPU + userNumber;
+console.log("La somma dei due numeri è: " + sum);
+
+// Creo una funzione per determinare se la somma è pari o dispari
+function isEven(value) {
+	if (value%2 == 0)
+		return result = "pari";
+	else
+		return result = "dispari";
+}
+
+let result = "";
+isEven(sum);
+console.log("La somma dei numeri è: " + result);
+
