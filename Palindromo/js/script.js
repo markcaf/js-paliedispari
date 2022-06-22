@@ -7,16 +7,8 @@ let char;
 // Dichiaro la variabile per la parola inversa
 let invertedWord = "";
 
-// Inizializzo i per il ciclo while
-let i = userWord.length - 1;
-
-// Ciclo while per spezzare la parola e ricostruirla invertita
-while (i >= 0) {
-  char = userWord[i];
-  invertedWord += char;
-  console.log(char);
-  i--;
-}
+// Uso la funzione creata
+reverseWord(userWord);
 
 console.log(invertedWord);
 
@@ -26,3 +18,20 @@ if(userWord == invertedWord){
   } else {
     console.log('La parola non è palindroma');
     }
+
+
+// Dichiaro la funzione per invertire la parola
+function reverseWord(userWord){
+
+  let i = userWord.length - 1;
+
+  // Ciclo while per spezzare la parola e ricostruirla invertita
+  while (i >= 0) {
+    char = userWord[i];
+    invertedWord += char;
+    console.log(char);
+    i--;
+  }
+
+  return invertedWord;
+}
