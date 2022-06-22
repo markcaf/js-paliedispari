@@ -13,5 +13,14 @@ while ((userNumber < 1 ) || (userNumber > 5)){
 }
 console.log("Hai scelto: " + userNumber);
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); 
+    //The maximum is exclusive and the minimum is inclusive
+  }
 
+// Numero casuale della CPU usando la funzionne getRandomInt
+const userCPU = getRandomInt(1, 6);
+console.log("Numero casuale della CPU: " + userCPU);
 
