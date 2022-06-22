@@ -9,7 +9,7 @@ console.log("Hai scelto: " + choice);
 // L'utente inserisce un numero da 1 a 5
 let userNumber = parseInt( prompt("Inserisci un numero da 1 a 5"));
 while ((userNumber < 1 ) || (userNumber > 5)){
-    userNumber = prompt("Inserisci un numero da 1 a 5");
+    userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
 }
 console.log("Hai scelto: " + userNumber);
 
@@ -36,10 +36,12 @@ function isEven(value) {
 		return result = "dispari";
 }
 
+// Visualizzo il risultato della funzione
 let result = "";
 isEven(sum);
 console.log("La somma dei numeri è: " + result);
 
+// Condizione per calcolare se l'utente ha vinto o ha perso
 if (result == choice){
     console.log("HAI VINTO!");
 } else{
