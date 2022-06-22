@@ -6,3 +6,16 @@ let char;
 
 // Dichiaro la variabile per la parola inversa
 let invertedWord = "";
+
+// Inizializzo i per il ciclo while
+let i = userWord.length - 1;
+
+// Ciclo while per spezzare la parola e ricostruirla invertita
+while (i >= 0) {
+  char = userWord[i];
+  invertedWord += char;
+  console.log(char);
+  i--;
+}
+
+console.log(invertedWord);
