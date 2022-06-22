@@ -40,3 +40,9 @@ let result = "";
 isEven(sum);
 console.log("La somma dei numeri è: " + result);
 
+if (result == choice){
+    console.log("HAI VINTO!");
+} else{
+    console.log("Mi dispiace, hai perso.");
+}
+
